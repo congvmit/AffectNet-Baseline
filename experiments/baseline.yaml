@@ -1,0 +1,17 @@
+dataloader:
+  data_dir: "/mnt/hdd2T/Data/AffectNet/data/Manually_Annotated_compressed/Manually_Annotated_Images/"
+  train_csv_path: "/mnt/hdd2T/Data/AffectNet/data/Manually_Annotated_compressed/training_clean_seven.csv"
+  val_csv_path: "/mnt/hdd2T/Data/AffectNet/data/Manually_Annotated_compressed/valid_seven.csv"
+  batch_size: 32
+
+model: 
+  model_name: 'resnet50'
+  dropout_rate: 0.1
+  image_size: 224
+
+optimizer: 'sgd'
+loss_fn: 'cce' # categorical cross entropy loss
+weight_decay: 0.001
+lr: 0.001
+
+
